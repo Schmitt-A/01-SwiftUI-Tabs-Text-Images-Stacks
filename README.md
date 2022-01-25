@@ -123,7 +123,7 @@ struct ProfileView: View {
             //.fit or .fill
                 .frame(width: 250)
             //.frame(width: 200, height: 200)
-            .border(Color.red, width: 10)
+            //.border(Color.red, width: 10)
             //.clipShape(Circle())
             //.clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                 
@@ -138,7 +138,7 @@ struct ProfileView: View {
                 }
                 Spacer()
             }
-            .border(Color.red, width: 1)
+            //.border(Color.red, width: 1)
             .frame(width: 250)
             //.padding()
             .padding(.bottom)
