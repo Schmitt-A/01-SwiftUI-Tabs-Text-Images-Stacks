@@ -82,7 +82,7 @@ struct CHANGEnameView: View {
 ```
 
 ## 04 Navigation to Views
-Change the **Text("")** to FirstView(), SecondView() and ThridView()
+Change the **Text("")** [(02)](https://github.com/Schmitt-A/01-SwiftUI-Tabs-Text-Images-Stacks/blob/main/README.md#02-creating-tabview-for-navigation) to FirstView(), SecondView() and ThridView()
 
 ```
 TabView {
@@ -105,7 +105,6 @@ TabView {
 }
 .font(.headline)
 ```
-
 
 ## 04 Working with Stacks, Text and Images
 [developer.apple.com/documentation/swiftui/building-layouts-with-stack-views](https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views)
