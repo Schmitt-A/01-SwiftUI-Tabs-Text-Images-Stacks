@@ -109,3 +109,46 @@ TabView {
 ## 04 Working with Stacks, Text and Images
 [developer.apple.com/documentation/swiftui/building-layouts-with-stack-views](https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views)
 
+Create a ProfileView()
+```
+import SwiftUI
+
+struct ProfileView: View {
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            //.bottom or .top
+            Image("ProfilePicture")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            //.fit or .fill
+                .frame(width: 250)
+            //.frame(width: 200, height: 200)
+            .border(Color.red, width: 10)
+            //.clipShape(Circle())
+            //.clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                
+            HStack {
+                VStack(alignment: .leading) {
+                    //.leading(left), .center(middle) und .trailing (right)
+                    Text("Rachael Chiseck")
+                        .font(.headline)
+                    Text("Chief Executive Officer")
+                        .font(.subheadline)
+                    //.largeTitle, .headline, .subheadline, .title
+                }
+                Spacer()
+            }
+            .border(Color.red, width: 1)
+            .frame(width: 250)
+            //.padding()
+            .padding(.bottom)
+            .padding(.top)
+            .foregroundColor(.primary)
+            //.red, .white, .black,..
+            .background(Color.primary
+                            .colorInvert()
+                            .opacity(0.75))
+        }
+    }
+}
+```
