@@ -62,7 +62,49 @@ TabView {
 
 
 
-## 03 Creating new Views
+## 03 Creating three new Views
+
+FirstView.swift / SecondView.swift / ThridView.swift and use the corresponding Name (**CHANGEname**)
+
+```
+import SwiftUI
+
+struct CHANGEnameView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+    }
+}
+```
+
+## 04 Navigation to Views
+Change the **Text("")** to FirstView(), SecondView() and ThridView()
+
+```
+TabView {
+    FirstView()
+        .badge(10)
+        .tabItem {
+            Image(systemName: "1.square.fill")
+            Text("First")
+        }
+    SecondView()
+        .tabItem {
+            Image(systemName: "2.square.fill")
+            Text("Second")
+        }
+    ThridView()
+        .tabItem {
+            Image(systemName: "3.square.fill")
+            Text("Third")
+        }
+}
+.font(.headline)
+```
 
 
 ## 04 Working with Stacks, Text and Images
